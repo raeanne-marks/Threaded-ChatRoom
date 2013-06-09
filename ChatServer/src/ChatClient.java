@@ -33,6 +33,7 @@ public class ChatClient implements Runnable {
 			while (!Thread.interrupted()) { 
 
 				String message = in.readLine();
+				System.out.println("Hey, I just received this: " + message);
 
 				if (message == null) { //If the client has disconnected, the message will be null.
 					

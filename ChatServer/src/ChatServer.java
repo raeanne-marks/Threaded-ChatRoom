@@ -33,7 +33,7 @@ public class ChatServer {
 			
 			while (true) {
 				Socket sock = server.accept(); //accept a client
-
+				System.out.println("I just had a client connect! :D");
 				synchronized (ChatServer.ConnectionArray) {
 					ConnectionArray.add(sock); 
 				}
